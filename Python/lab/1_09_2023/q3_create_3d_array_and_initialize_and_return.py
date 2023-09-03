@@ -14,7 +14,10 @@ def create_array(dims,values):
             array.append(subarray)
     return array
 
-print(create_array((3,8,3),[i for i in range(3*8*3)]))
+aList = []
+for i in range(3*8*3):
+    aList.append(i)
+print(create_array((3,8,3), aList))
 
         
     

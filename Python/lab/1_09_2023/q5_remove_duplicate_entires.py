@@ -1,6 +1,4 @@
-
-def sanitize_list(givenList):
-    print(givenList)
+def sanitize_list(givenList):    
     newList = []
     for i in set(givenList):
         newList.append(i)
