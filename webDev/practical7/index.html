@@ -9,12 +9,8 @@
     <title>VisualCode</title>
 
     <style>
-        .option-list{
-            border: none;
-        }
-        input::placeholder{
-            color: black;
-        }
+     
+     
         .nav-text{
             font-size: medium;
             font-weight: bold;
@@ -25,83 +21,131 @@
             border-color: rgb(37, 37, 244);
             cursor: pointer;
         }
-        summary{
-            list-style: none;
-            font-size: large;
+      
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: purple;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
             
+        }
+        nav div{
+            margin: 0px 8px;
+        }
+        li{
+            margin: 0px 10px;
+            overflow: hidden;
+            color: white;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        li a{
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        
+        .dropdown-content{
+            z-index: 1;
+            position: absolute;
+            background-color:peru;
+            color: black;
+            display: none;
+        }
+        
+        
+        li:hover .dropdown-content{
+            display: block;
+
+        }
+
+        .dropdown-content div{
+            margin-bottom: 6px;
+        }
+
+        .dropdown-content a:hover{
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <nav>
+    <header>
+
         <div>
-            <img src="" alt="VisualCodeLogo">
+            <img src="media/vscode.png" alt="VisualCodeLogo" width="50px" style="margin: 5px; padding: 5px; background-color: white;">
         </div>
-        <div>
-            <ul style="list-style: none; display: flex;">
-                <li>
-                    <details>
-                        <summary>Products</summary>
-                        <optgroup label="Editor">                            
-                            <option value="Download" >Download</option>
-                            <option value="Try Online">Try Online</option>
-                        </optgroup>
-                        <optgroup label="Visual Editor">
-                            <option value="">Download</option>
-                            <option value="">Design</option>
-                            <option value="">Prototyping</option>
-                        </optgroup>
-                    </details>               
-                       
-                    
+        <nav>
+            <div>
+                <ul style="list-style: none; display: flex;">
+                    <li>
+                        Products
+                        <div class="dropdown-content">
+                            <div>
+                                <p><b>Editor</b></p>
+                                <a href="#">Download</a>
+                                <a href="#">Try Online</a>
+                                <hr>
+                                <p><b>Visual Editor</b></p>
+                                <a href="#">Download</a>
+                                <a href="#">Design</a>
+                                <a href="#">Prototyping</a>
+                            </div>                       
+                        </div>
+                           
+                        
+                        </li>
+                    <li>
+                        Enterprise
+                        <div class="dropdown-content">
+                            <div>
+                                <a href="#">Overview</a>
+                                <a href="#">Customers</a>
+                                <a href="#">Contact Sales</a>
+                            </div>
+                        </div>    
                     </li>
-                <li>
-                    <details>
-                        <summary>
-                            Enterprise
-                        </summary>
-                        <option value="">Overview</option>
-                        <option value="">Customers</option>
-                        <option value="Contact Sales"></option>
-                    </details>
                     
-                    
-                </li>
-                <li>Pricing</li>
-                <li>
-                    <details>
-                        <summary>
-                            
-                        </summary>
-                    </details>
-                    <input type="text" name="" list="resources-list" placeholder="Resources" class="option-list">
-                    <datalist id="resources-list">
-                        <option value="Blog"></option>
-                        <option value="Templates"></option>
-                        <option value="Plugins and widgets"></option>
-                        <option value="Best practices"></option>
-                        <option value="Resource library"></option>
-                        <option value="Help center"></option>
-                    </datalist>
-                </li>
-                <li>
-                    <input type="text" name="" list="community-list" placeholder="Community" class="option-list">
-                    <datalist id="community-list">
-                        <option value="Community resources"></option>
-                        <option value="Events and livestreams"></option>
-                        <option value="Education program"></option>
-                        <option value="User groups"></option>
-                        <option value="Community creators"></option>
-                    </datalist>
-                </li>
-                <li>Log in</li>
-            </ul>
-        </div>
-        <div>
-            <button style="background-color: rgb(37, 37, 244); color:white;border-radius: 10px;" class="nav-text">Get Started for free</button>
-        </div>
-        
-    </nav>
+                    <li>
+                        Pricing
+                        <div class="dropdown-content">
+                            <div>
+                                <a href="#">Blog</a>
+                                <a href="#">Templates</a>
+                                <a href="#">Plugins and Widgets</a>
+                                <a href="#">Best Practices</a>
+                                <a href="#">Resource Library</a>
+                                <a href="#">Help Center</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Community
+                        <div class="dropdown-content">
+                            <div>
+                                <a href="#">Community Resources</a>
+                                <a href="#">Events and livestreams</a>
+                                <a href="#">Education Program</a>
+                                <a href="#">User groups</a>
+                                <a href="#">Community Creators</a>
+                            </div>
+                        </div>            
+                    </li>
+                    <li style="color: white;">Log in</li>
+                </ul>
+            </div>
+            <div>
+                <button style="background-color: rgb(37, 37, 244); color:white;border-radius: 10px; margin-top: 6px;" class="nav-text">Get Started for free</button>
+            </div>
+            
+        </nav>
+    </header>
     
 </body>
 </html>
