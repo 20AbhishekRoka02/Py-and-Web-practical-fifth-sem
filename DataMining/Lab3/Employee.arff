@@ -1,0 +1,30 @@
+@relation Employee
+
+@attribute Name string
+@attribute ID numeric
+@attribute Salary {low,medium,high}
+@attribute Experience numeric
+@attribute Gender {Male,Female}
+@attribute Phone numeric
+
+@data
+Aashish,1,medium,3,Male,7468434456
+Aastha,2,medium,3,Female,7683465540
+Abhishek,3,high,5,Male,7428434967
+Aniket,4,medium,4,Male,7628434967
+Arif,5,medium,3,Male,7928434967
+Bunty,6,medium,4,Male,7928444444
+Binod,7,low,3,Male,7828444451
+Bheem,8,high,5,Male,7929494959
+Ben,9,medium,6,Male,7828474757
+Chetan,10,medium,2,Male,7626464656
+Chirag,11,low,3,Male,7727494957
+Deepika,12,medium,4,Female,8727494957
+Deepali,13,medium,5,Female,8625424361
+Dhanesh,14,low,6,Male,8926434151
+Elon,15,medium,7,Male,8922345679
+Fatima,16,medium,2,Female,8267434483
+Farman,17,medium,3,Male,8321674423
+Gayatri,18,medium,3,Female,8422993247
+Ganesh,19,high,6,Male,9248326743
+Hitesh,20,medium,7,Male,9948326743
