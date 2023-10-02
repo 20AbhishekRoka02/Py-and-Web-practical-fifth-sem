@@ -1,0 +1,25 @@
+1. suggestion - for beginner programmer
+2. extensions for online code editing
+3. design to code
+4. 
+
+
+Conclusion:
+1. documentation for students
+
+2. JIRA
+	- time limit ping
+	- story frame - bug can be end in 1/2 day (time can be 6 days or 1/2 days) - hangout or meeting. 
+
+schedule bug (1st priority) , story line (2nd priority) and task (3rd priority)
+schedulig by chat gpt api
+
+Priority set.
+Extension or website
+
+5. Prettify files - final
+6. Cockpit - vs extension
+
+______________________________________________________
+Documentation
+

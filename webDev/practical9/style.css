@@ -1,0 +1,54 @@
+h2{
+    font-family: 'Brush Script MT', cursive;
+    font-weight: normal;
+    text-align: center;
+}
+
+h1, h3{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive	;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.questions{
+    border-top: 1px solid black;
+    display: flex;
+    
+    
+
+}
+.exercise{
+    text-align: left;
+    font-weight: bold;
+}
+
+.exercise-div{
+    width: 10%;
+}
+
+.content-div{
+    width: 90%;
+    margin-left: 10px;
+}
+p{
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/* Exercise 1  */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    background-color: white;
+    margin: 0;
+}
+
+h1,h2,h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+h1{
+    font-size: xx-large;
+    color: rgb(155, 54, 94);
+}

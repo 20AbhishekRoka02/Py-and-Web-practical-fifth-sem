@@ -1,0 +1,11 @@
+@relation Employee
+
+@attribute Name string;
+@attribute ID numeric;
+@attribute Salary {low,medium,high};
+@attribute Experience numeric;
+@attribute Gender {male,female};
+@attribute Phone numeric;
+
+@data
+Abhishek,45,high,5,male,8908907890

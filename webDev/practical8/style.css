@@ -1,0 +1,37 @@
+body{
+    border: 2px solid black;
+}
+section div{
+    margin: 0 0.2cm;
+
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1.6em;
+    word-spacing: 2em;
+    text-align: center;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    font-size: 18px;
+    letter-spacing: 1.4em;
+}
+
+.years p{
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0.5cm;
+}
+
+.qualifications, .fields{
+    margin-left: 2cm;
+}
+#education, #experience{
+    display: flex;    
+}

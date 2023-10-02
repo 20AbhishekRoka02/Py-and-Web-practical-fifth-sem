@@ -1,0 +1,20 @@
+ul{
+    list-style-type: lower-greek;
+}
+
+#outside-list{
+    list-style-position: outside;
+}
+#inside-list{
+    list-style-position: inside;
+}
+
+li{
+    border: 2px solid black;
+}
+
+#other-list{
+    /* list-style-position: outside; */
+    list-style-image: url('wea.png');
+    
+}

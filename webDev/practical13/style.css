@@ -1,0 +1,26 @@
+td{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: inherit;
+    padding: 30px;    
+}
+tr:nth-child(4n) td{
+    vertical-align: top;
+}
+tr:nth-child(4n) td:hover{
+    border: 4px solid purple;
+}
+
+tr:nth-child(3n-1) td{
+    vertical-align: bottom;
+}
+
+tr:nth-child(3n-1) td:hover{
+    border: 4px solid orange;
+}
+table{
+    border: 1px solid red;
+    border-collapse: collapse;
+    width: 100%;
+    height: 500px;    
+}

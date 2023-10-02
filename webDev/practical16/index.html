@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="arithmetic.js"></script>
+    <script src="logical.js"></script>
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Maths Operators in js</h1>
+    <div>
+        <div>
+            <input type="text" placeholder="Enter a number" id="num1">
+            operator
+            <input type="text" placeholder="Enter a number" id="num2">
+            =
+            <input type="text" id="output" disabled placeholder="result">
+        </div>
+        <div style="display: flex;">
+            <div>
+                <h2>Arithmetic</h2>
+                <ul>
+                    <li onclick="domath('+')">Add (+)</li>
+                    <li onclick="domath('-')">Subtract (-)</li>
+                    <li onclick="domath('x')">Multiply (x)</li>
+                    <li onclick="domath('/')">Divide (/)</li>
+                    <li onclick="domath('%')">Modulo (%)</li>
+                    <li onclick="domath('**')">Power (**)</li>
+                    <li onclick="domath('++')">increment (++)</li>
+                    <li onclick="domath('--')">decrement (--)</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Logical</h2>
+                <ul>
+                    <li onclick="dologic('and')">AND (&&)</li>
+                    <li onclick="dologic('or')">OR (||)</li>
+                    <li onclick="dologic('not')">NOT (!)</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
