@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+</head>
+<body>
+    <section>
+        <p>Color: <span id="color" style="background-color: red; color: white ;">red</span></p>
+        <div>
+            <button onclick="colorChange('red')">Red</button>
+            <button onclick="colorChange('blue')">Blue</button>
+            <button onclick="colorChange('green')">Green</button>
+        </div>
+    </section>
+    <script type="text/javascript" language="javascript">
+        function colorChange(color) {
+            let colorElement = document.getElementById('color');
+            colorElement.style.backgroundColor=color;
+            colorElement.innerText=color;
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <div>Name: <input type="text" placeholder="Your name"></div>
+        <div>Roll Number: <input type="text" placeholder="Your Roll number"></div>
+        <div>Phone Number: <input type="text" placeholder="Your Phone number"></div>
+        <!-- <div><button onclick="reset()">Reset</button></div> -->
+        <div><button type="reset">Reset</button></div>
+    </form>
+    <div>
+        <p id="toggle-button">This is a Toggle Label!</p>
+    </div>
+    <script type="text/javascript" language="javascript">
+        const toggle = document.getElementById("toggle-buttons");
+        toggle.addEventListener("click", ()=>{
+            alert(toggle.style.backgroundColor);
+
+        })
+        function reset() {
+            const inputs= document.getElementsByTagName('input');
+            console.log(inputs);
+            for (const iterator of object) {
+                iterator.value="";
+            }
+            
+        }
+        // console.log(inputs);
+    </script>
+</body>
+</html>

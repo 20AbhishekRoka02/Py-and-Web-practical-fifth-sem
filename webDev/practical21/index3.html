@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            font-weight: bold;
+        }
+        p{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+        <section>
+            <div><label for="value">Value: </label><input type="text" placeholder="Enter number" id="value" onkeyup="validNum(self.value)">
+            <p id="warn" style="color: red;" hidden>Type numbers, please!</p></div>
+            <div style="display: flex; flex-direction: column;">
+                <p>Action: </p>
+                <div>
+                    <input type="radio" name="option" id="double" onclick="calculateFunction()"><label for="double" onclick="calculateFunction()">Double</label>
+                </div>
+                <div>
+                    <input type="radio" name="option" id="square" onclick="calculateFunction()"><label for="square" onclick="calculateFunction()">Square</label>
+                </div>
+            </div>
+            <div">
+                <label for="result">Result: </label><input type="text" id="result" disabled>
+            </div>
+        </section>
+    </center>
+    <script  type="text/javascript" language="javascript">
+        function validNum(params) {
+            if (isNaN(params.value)) {
+                params.style.borderColor='red';
+                document.getElementById('warn').hidden=false;
+            } else{
+                params.style.borderColor='black';
+                document.getElementById('warn').hidden=true;
+            }
+            
+        }
+        
+        function calculateFunction() {
+            let values = document.getElementById('value');
+            let result = document.getElementById('result');
+            
+            const buttons = document.getElementsByName('option');
+            console.log(buttons[0].checked, buttons[1].checked);
+            if (buttons[0].checked){
+                result.value =Number(values.value) * 2;
+            } else if (buttons[1].checked) {
+                
+                result.value = Number(values.value) ** 2; 
+            }            
+            
+        }
+        
+        
+
+    </script>
+    
+</body>
+</html>
