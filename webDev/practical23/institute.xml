@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE institutes[
+    <!ELEMENT institutes (institute,institute)>
+    <!ELEMENT institute (name, courses)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT courses (course, course, course)>
+    <!ELEMENT course (program, sections, seats, eligibility)>
+    <!ELEMENT program (#PCDATA)>
+    <!ELEMENT sections (#PCDATA)>
+    <!ELEMENT seats (#PCDATA)>
+    <!ELEMENT eligibility (#PCDATA)>
+]>
+<institutes>
+    <institute>
+        <name>DSEU Dwarka</name>
+        <courses>
+            <course>
+                <program>Full Time Diploma in Computer Engineering</program>
+                <sections>Sections: 5</sections>
+                <seats>Seats: 600</seats>
+                <eligibility>Eligibility: 10th</eligibility>
+            </course>
+            <course>
+                <program>Full Time Diploma in AI/ML</program>
+                <sections>Sections: 3</sections>
+                <seats>Seats: 200</seats>
+                <eligibility>Eligibility: 10th</eligibility>
+            </course>
+            <course>
+                <program>BCA</program>
+                <sections>Sections: 3</sections>
+                <seats>Seats: 600</seats>
+                <eligibility>Eligibility: 12th</eligibility>
+            </course>
+        </courses>
+    </institute>
+    <institute>
+        <name>SSCBS</name>
+        <courses>
+            <course>
+                <program>BBA</program>
+                <sections>Sections: 10</sections>
+                <seats>Seats: 1000</seats>
+                <eligibility>Eligibility: 12th</eligibility>
+            </course>
+            <course>
+                <program>B.Com</program>
+                <sections>Sections: 6</sections>
+                <seats>Seats: 500</seats>
+                <eligibility>Eligibility: 12th</eligibility>
+            </course>
+            <course>
+                <program>B.Sc Computer (Honors)</program>
+                <sections>Sections: 10</sections>
+                <seats>Seats: 1000</seats>
+                <eligibility>Eligibility: 12th</eligibility>
+            </course>
+        </courses>
+    </institute>
+
+
+</institutes>

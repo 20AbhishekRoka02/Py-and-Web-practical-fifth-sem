@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE institutes[
+    <!ELEMENT institutes (institute,institute)>
+    <!ELEMENT institute (name, courses)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT courses (course, course, course)>
+    <!ELEMENT course (program, sections, seats, eligibility)>
+    <!ELEMENT program (#PCDATA)>
+    <!ELEMENT sections (#PCDATA)>
+    <!ELEMENT seats (#PCDATA)>
+    <!ELEMENT eligibility (#PCDATA)>
+]>
+<institutes>
+    <institute>
+        <name>DSEU Dwarka</name>
+        <courses>
+            <course>
+                <program>Full Time Diploma in Computer Engineering</program>
+                <sections>5</sections>
+                <seats>600</seats>
+                <eligibility>10th</eligibility>
+            </course>
+            <course>
+                <program>Full Time Diploma in AI/ML</program>
+                <sections>3</sections>
+                <seats>200</seats>
+                <eligibility>10th</eligibility>
+            </course>
+            <course>
+                <program>BCA</program>
+                <sections>3</sections>
+                <seats>600</seats>
+                <eligibility>12th</eligibility>
+            </course>
+        </courses>
+    </institute>
+    <institute>
+        <name>SSCBS</name>
+        <courses>
+            <course>
+                <program>BBA</program>
+                <sections>10</sections>
+                <seats>1000</seats>
+                <eligibility>12th</eligibility>
+            </course>
+            <course>
+                <program>B.Com</program>
+                <sections>6</sections>
+                <seats>500</seats>
+                <eligibility>12th</eligibility>
+            </course>
+            <course>
+                <program>B.Sc Computer (Honors)</program>
+                <sections>10</sections>
+                <seats>1000</seats>
+                <eligibility>12th</eligibility>
+            </course>
+        </courses>
+    </institute>
+
+
+</institutes>

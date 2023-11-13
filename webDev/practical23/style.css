@@ -1,0 +1,25 @@
+institutes{
+    display: block;
+}
+
+name{
+    display: block;
+    background-color: yellow;
+    text-align: center;
+}
+
+courses{
+    display: flex;
+    flex-direction: column;
+}
+
+course{
+    display: flex;
+    flex-direction: column;
+}
+
+program{
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
