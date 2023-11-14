@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maximum element in 2D array</title>
 </head>
+
 <body>
-    
+    <p id="max"></p>
+    <script>
+        let array2d = [
+            [12, 34, 13, 51],
+            [90, 67, 54, 32]
+        ];
+        let maximum=0;
+
+        function maxIn2DArray() {
+            for (const subarray of array2d) {
+                for (const val of subarray) {
+                    if (maximum<val) {
+                        maximum=val;
+                    }
+                }
+            }
+            document.getElementById('max').innerHTML="Maximum element value in the given 2D array is: " + maximum;
+            
+        }
+        maxIn2DArray();
+
+        
+    </script>
 </body>
+
 </html>
