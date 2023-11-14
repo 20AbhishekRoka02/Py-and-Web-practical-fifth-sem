@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <section>
+        <h1>Calculator</h1>
+        <form action="cal.php" method="post">
+
+            <div style="display: flex; flex-direction: row;">
+                <div style="margin-right: 2px;">
+                    <input name="num1" id="num1" type="number" placeholder="Enter a number" required>
+                    <br>
+                    <input name="num2" id="num2"  type="number" placeholder="Enter a number" required>
+                    <br>
+                    <input id="sudo-operator" type="text" value="" disabled required>
+                    <input type="hidden" id="operator" name="operator" value="" type="text" required>
+                </div>
+                <div style="display:  flex; flex-direction: column; margin-left: 2px;">
+                    <button type="button" id="add" onclick="domath(this)">+</button>
+                    <button id="sub" 
+                    type="button"  onclick="domath(this)">-</button>
+                    <button id="mul" 
+                    type="button"  onclick="domath(this)">*</button>
+                    <button id="div" 
+                    type="button"  onclick="domath(this)">/</button>
+                </div>
+                <div>
+                    <button id="submit-btn" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script>
+        let submit = document.getElementById('submit-btn');
+        submit.addEventListener('click',(event)=>{
+            if (document.getElementById('operator').value.length==0){
+             event.preventDefault();
+             alert('Choose an operator!');
+            }
+        })
+        
+        function domath(params) {
+            document.getElementById('operator').value = params.innerHTML;
+            document.getElementById('sudo-operator').value = params.innerHTML;
+        }
+    </script>
+    
+</body>
+</html>
