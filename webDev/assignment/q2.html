@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tOGGLE iNPUT</title>
+</head>
+<body>
+    <input type="text" value="" id="input">
+    <script>
+        function isUpperCase(character) {
+            return character == character.toUpperCase() && character != character.toLowerCase();            
+        }
+        function isLowerCase(character) {
+            return character != character.toUpperCase() && character == character.toLowerCase();            
+        }
+        
+
+        let input = document.getElementById("input");
+        input.addEventListener('blur', ()=>{
+            let text = input.value;
+            let newtext = "";
+
+            for (const char of text) {
+                if (isUpperCase(char)){
+                    newtext += char.toLowerCase();
+                } else if (isLowerCase(char)) {
+                    newtext += char.toUpperCase();                    
+                } else{
+                    newtext += char;
+                }       
+            }
+            input.value = newtext;
+
+
+        })
+    </script>
+    
+</body>
+</html>

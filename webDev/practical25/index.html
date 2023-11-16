@@ -11,7 +11,7 @@
     <script>
         let inputfield = document.getElementById("text");
         let result = document.getElementById('result');
-        document.addEventListener('keyup', ()=>{
+        inputfield.addEventListener('keyup', ()=>{
             let data = inputfield.value;
             if (data == data.split("").reverse().join("")){
                 if (data.length !=0) {

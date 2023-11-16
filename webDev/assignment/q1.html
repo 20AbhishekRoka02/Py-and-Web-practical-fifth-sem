@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Change</title>
+</head>
+<body>
+    <section>
+        <div>
+            <input list="colors" name="color-picker" id="color-picker" value="">
+            <datalist id="colors">
+                <option value="Red"></option>
+                <option value="Blue"></option>
+                <option value="Green"></option>
+            </datalist>
+        </div>
+        <div style="width: 50%; height: 300px; border: 2px solid black; margin-top: 100px; margin-left: 100px;" id="color-div"></div>
+    </section>
+    <script>
+        let picker = document.getElementById('color-picker');
+        let thediv = document.getElementById("color-div");
+        picker.addEventListener('input', ()=>{
+            thediv.style.backgroundColor = picker.value;
+        });
+    </script>    
+</body>
+</html>
