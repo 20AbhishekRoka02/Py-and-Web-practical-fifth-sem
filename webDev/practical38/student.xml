@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <rno>1</rno>
+        <name>Abhishek</name>
+    </student>
+    <student>
+        <rno>2</rno>
+        <name>Ankit</name>
+    </student>
+    <student>
+        <rno>3</rno>
+        <name>Amit</name>
+    </student>
+    <student>
+        <rno>4</rno>
+        <name>Rachit</name>
+    </student>
+    <student>
+        <rno>5</rno>
+        <name>Utkarsh</name>
+    </student>
+</students>
