@@ -43,7 +43,7 @@
             $msg = $_POST['message'];
             ini_set("SMTP", "localhost");
             ini_set("smtp_port", "465");
-            mail($to,$subject,$msg,"From: rockst463@gmail.com");
+            mail($to,$subject,$msg,"From: abc@gmail.com");
 
             // // Sending actual mail using Real SMTP by PHP Mailer
             
